@@ -49,6 +49,6 @@ de.defstyle("frame-transient-alt", {
 
 ## License
 
-LGPLv3
+[LGPLv3](http://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 <!--- vim: set tw=90 sts=-1 sw=4 et spell: -->
