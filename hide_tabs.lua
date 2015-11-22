@@ -18,8 +18,8 @@
 -- without closing all client windows first.
 
 -- Enable by adding dopath("hide_tabs") to (e.g.) your cfg_notion.lua and
--- defining adapted "-alt" styles in your "look_something.lua" (usually
--- "frame-tiled-alt" with the argument "bar = "none"").
+-- defining adapted `-alt` styles in your `look_foo.lua` (usually
+-- `frame-tiled-alt` with the argument `bar = "none"`).
 
 -- Uncomment frame types whose tab bar should never be hidden.
 local excludes = {
