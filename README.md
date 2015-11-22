@@ -45,7 +45,10 @@ de.defstyle("frame-transient-alt", {
     based_on = "frame-transient",
     bar = "none",
 })
-
 ```
+
+## License
+
+LGPLv3
 
 <!--- vim: set tw=90 sts=-1 sw=4 et spell: -->
