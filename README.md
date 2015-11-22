@@ -1,7 +1,7 @@
 # hide_tabs.lua
 
 Lua script for the [Notion window manager][1] that hides the tab bar of frames which
-contain exactly one client window.  Tab bars of tagged frames are always shown.
+contain exactly one client window.  Tagged frames are excluded.
 
 If you've used [min_tabs.lua][2], this script's advantages are:
 * It doesn't define a hard-coded (or any) keybinding
@@ -13,7 +13,12 @@ If you've used [min_tabs.lua][2], this script's advantages are:
 
 ## Installation
 
-Copy `hide_tabs.lua` to `~/.notion/` and enable it by adding `dopath("hide_tabs")` to
+Copy `hide_tabs.lua` to `~/.notion/`
+```sh
+curl -fLo ~/.notion/hide_tabs.lua \
+    https://raw.githubusercontent.com/meribold/notion-hide-tabs/master/hide_tabs.lua
+```
+and enable it by adding `dopath("hide_tabs")` to
 (usually) your `cfg_notion.lua`.
 
 You need a drawing engine style that defines some `-alt` styles with `bar = "none"` for
