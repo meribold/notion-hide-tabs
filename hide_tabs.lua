@@ -13,14 +13,6 @@
 -- For a copy of the GNU Lesser General Public License, see
 -- <http://www.gnu.org/licenses/>
 
--- Compared to min_tabs.lua, this script does not require a keybinding, works
--- for the sratchpad, and covers some problems arising when exiting Notion
--- without closing all client windows first.
-
--- Enable by adding dopath("hide_tabs") to (e.g.) your cfg_notion.lua and
--- defining adapted `-alt` styles in your `look_foo.lua` (usually
--- `frame-tiled-alt` with the argument `bar = "none"`).
-
 -- Uncomment frame types whose tab bar should never be hidden.
 local excludes = {
     --tiled = true,
