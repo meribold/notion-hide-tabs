@@ -21,28 +21,25 @@ curl -fLo ~/.notion/hide_tabs.lua \
 and enable it by adding `dopath("hide_tabs")` to
 (usually) your `cfg_notion.lua`.
 
-You need a drawing engine style that defines some `-alt` styles with `bar = "none"` for
-frames.  If you've used `min_tabs.lua` you should already have those.  If not, drawing
-engine styles are usually defined in files named `look_foo.lua`.  To modify your existing
-style, you might add
+## Troubleshooting
+
+If some tab bars aren't hidden, you may need to modify your drawing engine style (but all
+the default styles appear to work).  Drawing engine styles are usually defined in files
+named `look_foo.lua`.  You can try adding
 ```lua
 de.defstyle("frame-tiled-alt", {
-    based_on = "frame-tiled",
     bar = "none",
 })
 
 de.defstyle("frame-unknown-alt", {
-    based_on = "frame-unknown",
     bar = "none",
 })
 
 de.defstyle("frame-floating-alt", {
-    based_on = "frame-floating",
     bar = "none",
 })
 
 de.defstyle("frame-transient-alt", {
-    based_on = "frame-transient",
     bar = "none",
 })
 ```
