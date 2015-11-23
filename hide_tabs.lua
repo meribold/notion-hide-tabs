@@ -64,7 +64,7 @@ notioncore.get_hook("region_notify_hook"):add(
     end
 )
 
--- WFrames that were not correctly reset to their normal syles (i.e. having
+-- WFrames that were not correctly reset to their normal styles (i.e. having
 -- tabs) when exiting Notion the last time are now, at startup. This is
 -- necessary if Notion was exited while any WFrame contained exactly one client
 -- window (that thus had no tab bar).
